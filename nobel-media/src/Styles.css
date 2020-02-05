@@ -1,0 +1,76 @@
+body { 
+    background-size: 50%;
+    background-color: #1a1a1a;
+}
+
+.color0{ background-color: #0c0c0c; }
+.color1{ background-color: #1a1a1a; }
+.color2{ background-color: #242424; }
+.color3{ background-color: #4b4b4b; }
+.color4{ background-color: #c7c7c7; }
+
+.textColor0{ color: #0c0c0c; }
+.textColor1{ color: #1a1a1a; }
+.textColor2{ color: #242424; }
+.textColor3{ color: #4b4b4b; }
+.textColor4{ color: #c7c7c7; }
+
+h1, h2, h3, h4, h5, h6, a, p{ 
+    font-family: 'Oswald', cursive; 
+    color: white;
+}
+a:hover{
+    font-family: 'Oswald', cursive; 
+    color: #c7c7c7;
+}
+
+.textSimple{ font-family: 'Roboto Condensed', sans-serif; }
+
+.center{ margin: auto; }
+.centerWidth{
+    margin-left: auto;
+    margin-right: auto;
+}
+.centerHight{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.maxTextWidht { max-width: 700px; }
+
+.margin10{ margin: 10px; }
+.margin10_right{ margin-right: 10px; }
+
+.contentBox{
+    position: absolute;
+    top: 70px;
+    left: 6vw;
+    right: 6vw;
+    bottom: 20px;
+}
+
+.fullWidth{ width: 100%; }
+.fullHeight{ height: 100%; }
+.fillBox { 
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.fillWidth{ 
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.fillHeight{ 
+    position: absolute;
+    bottom: 0;
+    top: 0;
+}
+
+
+.height10{ height: 10px; }
+.height20{ height: 20px; }
+.height30{ height: 30px; }
+.height40{ height: 40px; }
+.height50{ height: 50px; }

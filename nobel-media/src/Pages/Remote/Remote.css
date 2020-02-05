@@ -1,0 +1,8 @@
+.RemoteButton{
+    position: relative;
+    width: 80%;
+    left: 10%;
+    height: 80px;
+    font-size: 25px;
+    margin: 10px;
+}
