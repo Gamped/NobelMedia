@@ -1,0 +1,18 @@
+.LoginForm{
+    position: relative;
+    min-width: 250px;
+    width: 60%;
+    max-width: 400px;
+    margin-bottom: 10px;
+
+}
+
+.LoginButton{
+    position: relative;
+    min-width: 150px;
+    width: 40%;
+    max-width: 200px;
+    height: 45px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
