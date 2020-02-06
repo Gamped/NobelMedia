@@ -17,8 +17,8 @@ body {
 .textColorRed{ color: rgb(122, 15, 15); }
 
 .textNoWrap{ 
-    word-wrap: none; 
-    text-overflow: clip;
+    white-space:nowrap;
+    overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6, a, p{ 

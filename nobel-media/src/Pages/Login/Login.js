@@ -22,38 +22,36 @@ const tryLogin = function(){
 
 const Login = () => {
     return (
-        <div>
-            <div className="contentBox">
-                <Row>
-                    <Col><h1 className="text-center">Login</h1></Col>
-                </Row>
-                <NormalText txt="Login to be able to queue music and use the remote"/>
-                <Row>
-                    <Col>
-                        <input
-                            className="LoginForm form-control centerWidth"
-                            placeholder="Username"
-                            id="Username"
-                        />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <input
-                            className="LoginForm form-control centerWidth"
-                            placeholder="Password"
-                            id="Password"
-                            type="password"
-                        />
-                    </Col>
-                </Row>
-                <Row>
-                    <Button className="centerWidth LoginButton" variant="outline-light" onClick={tryLogin}>Sign in</Button>
-                </Row>
-                <Row>
-                    <Col><h3 id="PasswordErrorMsg" className="text-center textColorRed"> </h3></Col>
-                </Row>
-            </div>
+        <div className="contentBox">
+            <Row>
+                <Col><h1 className="text-center">Login</h1></Col>
+            </Row>
+            <NormalText txt="Login to be able to queue music and use the remote"/>
+            <Row>
+                <Col>
+                    <input
+                        className="LoginForm form-control centerWidth"
+                        placeholder="Username"
+                        id="Username"
+                    />
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <input
+                        className="LoginForm form-control centerWidth"
+                        placeholder="Password"
+                        id="Password"
+                        type="password"
+                    />
+                </Col>
+            </Row>
+            <Row>
+                <Button className="centerWidth LoginButton" variant="outline-light" onClick={tryLogin}>Sign in</Button>
+            </Row>
+            <Row>
+                <Col><h3 id="PasswordErrorMsg" className="text-center textColorRed"> </h3></Col>
+            </Row>
         </div>
     );
 }
