@@ -2,21 +2,22 @@ import React from "react";
 import {Row, Col, Button} from "react-bootstrap";
 import NormalText from "../../Elements/NormalText/NormalText";
 import { Component } from "react";
+import "./AddToQueue.css";
 
-class CurrentQueue extends Component {
+class AddToQueue extends Component {
     constructor(props) {
        super(props) 
        this.state = { 
-          queues: [
-             { title: "Sandstorm", artist: 'Darude', playTime: 120 },
-             { title: "Last christmas", artist: 'Wham', playTime: 87 },
+          songs: [
+            { title: "Sandstorm", artist: 'Darude', playTime: 120 },
+            { title: "Last christmas", artist: 'Wham', playTime: 87 },
           ]
        }
     }
 
     renderTableData() {
-        return this.state.queues.map((queue) => {
-            const { title, artist, playTime } = queue;
+        return this.state.songs.map((song) => {
+            const { title, artist, playTime } = song;
             let min = Math.floor(playTime / 60), sec = playTime % 60;
 
             return (
@@ -24,7 +25,7 @@ class CurrentQueue extends Component {
                     <td>{title}</td>
                     <td><i>{artist}</i></td>
                     <td>{min}m {sec}s</td>
-                    <td><Button className="centerWidth" variant="outline-secondary">Vote skip</Button></td>
+                    <td><Button className="centerWidth" variant="outline-secondary">Add</Button></td>
                 </tr>
             )
         });
@@ -34,11 +35,25 @@ class CurrentQueue extends Component {
         return (
             <div className="contentBox">
                 <Row>
-                    <Col><h1 className="text-center">Current queue</h1></Col>
+                    <Col><h1 className="text-center">Add to queue</h1></Col>
                 </Row>
-                <NormalText txt="The current queue, and vote to skip a song"/>
+                <NormalText txt="Here you can add a song to the queue"/>
                 <Row>
                     <Col>
+                        <input
+                            className="AddToQueueSearchField form-control centerWidth"
+                            placeholder="Search for song on Spotify"
+                            id="SearchField"
+                            type="text"
+                        />
+                    </Col>
+                </Row>
+                <Row>
+                    <Button className="centerWidth AddToQueueButton" variant="outline-light">Search</Button>
+                </Row>
+                <Row>
+                    <Col>
+                        <h3 className="text-center">Search results:</h3>
                         <div className="table-responsive-xl">
                             <table class="table table-striped table-dark">
                                 <thead>
@@ -46,7 +61,7 @@ class CurrentQueue extends Component {
                                         <th>Song title</th>
                                         <th>Artist</th>
                                         <th>Playtime</th>
-                                        <th>Skip?</th>
+                                        <th>Add?</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -61,4 +76,4 @@ class CurrentQueue extends Component {
     }
 } 
 
-export default CurrentQueue;
+export default AddToQueue;
