@@ -10,18 +10,18 @@ const About = () => {
                 <Row>
                     <Col><h1 className="text-center">Remote</h1></Col>
                 </Row>
-                <NormalText txt="Here you can switch between chromecast/HDMI and power on/off the projector."/>
+                <NormalText txt="Here you can switch between chromecast/HDMI and power on/off the projector"/>
                 <Row className="centerWidth">
-                    <Button className="RemoteButton" variant="outline-light">Projector ON</Button>
+                    <Button className="RemoteButton centerWidth" variant="outline-light">Projector ON</Button>
                 </Row> 
                 <Row className="centerWidth">
-                    <Button className="RemoteButton" variant="outline-light">Projector OFF</Button>
+                    <Button className="RemoteButton centerWidth" variant="outline-light">Projector OFF</Button>
                 </Row> 
                 <Row className="centerWidth">
-                    <Button className="RemoteButton" variant="outline-light">Chromecast</Button>
+                    <Button className="RemoteButton centerWidth" variant="outline-light">Chromecast</Button>
                 </Row> 
                 <Row className="centerWidth">
-                    <Button className="RemoteButton" variant="outline-light">HDMI</Button>
+                    <Button className="RemoteButton centerWidth" variant="outline-light">HDMI</Button>
                 </Row> 
             </div>
         </div>

@@ -16,6 +16,11 @@ body {
 .textColor4{ color: #c7c7c7; }
 .textColorRed{ color: rgb(122, 15, 15); }
 
+.textNoWrap{ 
+    word-wrap: none; 
+    text-overflow: clip;
+}
+
 h1, h2, h3, h4, h5, h6, a, p{ 
     font-family: 'Oswald', cursive; 
     color: white;

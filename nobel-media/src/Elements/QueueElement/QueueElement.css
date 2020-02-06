@@ -1,0 +1,18 @@
+.QueueElementBox{
+    height: 80px;
+    width: 100%;
+    margin: 5px;
+}
+
+
+.QueueBox{
+    position: absolute;
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.QueueSkip{
+    top: 0;
+    right: 0;
+}
