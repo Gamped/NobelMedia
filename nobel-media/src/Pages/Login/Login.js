@@ -4,20 +4,35 @@ import NormalText from "../../Elements/NormalText/NormalText";
 import "./Login.css";
 
 // Function used to try to login
-const tryLogin = function(){
-    let loginSucess = false;
+const TryLogin = function(){
+    let loginSucess = false,
+        user = document.getElementById("Username").value,  
+        pass = document.getElementById("Password").value;
 
     // DEBUG
-    console.log("User: " + document.getElementById("Username").value);
-    console.log("Pass: " + document.getElementById("Password").value);
+    console.log("User: " + user);
+    console.log("Pass: " + pass);
+
+    // Do a check if numbers and letters only 
+    // (NOTE: This is only for usability purpose, as actual check will be done in backend)
+    if (verifyInput(user) || verifyInput(pass)){
+        document.getElementById("PasswordErrorMsg").innerHTML = "Only letters and numbers are allowed!";
+        return;
+    }
 
     /* Todo: Get verification */
-
     if(loginSucess){
         // Todo: Handle a session with login
     } else {
         document.getElementById("PasswordErrorMsg").innerHTML = "Wrong login credentials!";
     }
+}
+
+// This is to verify that the input is only letters and numbers
+// NOTE: This is just for usability feedback, as it will also be verified in the backend
+const verifyInput = function(input){
+    let regEx = new RegExp("[^a-zA-Z0-9]");
+    return regEx.test(input);
 }
 
 // The HTML of the login page
@@ -48,7 +63,7 @@ const Login = () => {
                 </Col>
             </Row>
             <Row>
-                <Button className="centerWidth LoginButton" variant="outline-light" onClick={tryLogin}>Sign in</Button>
+                <Button className="centerWidth LoginButton" variant="outline-light" onClick={TryLogin}>Sign in</Button>
             </Row>
             <Row>
                 <Col><h3 id="PasswordErrorMsg" className="text-center textColorRed"> </h3></Col>
