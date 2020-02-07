@@ -4,7 +4,7 @@ import NormalText from "../../Elements/NormalText/NormalText";
 import NobelLogo from "../../Media/NewLogo.svg";
 import "./Home.css";
 
-const About = () => {
+const Home = () => {
     return (
         <div>
             <div className="contentBox">
@@ -18,4 +18,4 @@ const About = () => {
     );
 }
 
-export default About;
+export default Home;

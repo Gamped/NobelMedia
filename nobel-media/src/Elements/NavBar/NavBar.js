@@ -2,6 +2,7 @@ import React from "react";
 import { Navbar, Nav, NavDropdown} from "react-bootstrap";
 import logo from "../../Media/NewLogo.svg";
 
+// This is the navigation bar, using Bootstrap
 const NavBar = () => {
     return (
         <div>
@@ -31,11 +32,5 @@ const NavBar = () => {
         </div>
     )
 }
-
-/* How to have dropdown:
-<NavDropdown title="Marketplace content" id="basic-nav-dropdown" variant="secondary">
-    <NavDropdown.Item href="/somewhere">Something</NavDropdown.Item>
-</NavDropdown>
-*/
 
 export default NavBar;

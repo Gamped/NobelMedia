@@ -14,6 +14,7 @@ class CurrentQueue extends Component {
        }
     }
 
+    // Construct the table with all rows from the this.state.songs array
     renderTableData() {
         return this.state.queues.map((queue) => {
             const { title, artist, playTime } = queue;

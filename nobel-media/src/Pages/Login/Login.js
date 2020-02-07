@@ -20,6 +20,7 @@ const tryLogin = function(){
     }
 }
 
+// The HTML of the login page
 const Login = () => {
     return (
         <div className="contentBox">

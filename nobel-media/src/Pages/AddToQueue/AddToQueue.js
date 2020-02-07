@@ -15,6 +15,7 @@ class AddToQueue extends Component {
        }
     }
 
+    // Construct the table with all rows from the this.state.songs array
     renderTableData() {
         return this.state.songs.map((song) => {
             const { title, artist, playTime } = song;

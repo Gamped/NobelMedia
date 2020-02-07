@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import {Row, Col} from "react-bootstrap";
 
+// To simplify writing normal text this class can be used
 class NormalText extends Component {
     constructor(props){
         super(props);
