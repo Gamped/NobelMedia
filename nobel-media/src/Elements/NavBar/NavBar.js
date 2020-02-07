@@ -23,7 +23,7 @@ const NavBar = () => {
                         <Nav.Link href="/remote">Remote</Nav.Link>
                         <NavDropdown title="Music" id="basic-nav-dropdown" variant="secondary">
                             <NavDropdown.Item href="/music/queue">Current queue</NavDropdown.Item>
-                            <NavDropdown.Item href="/music/queue-song">Add to queue</NavDropdown.Item>
+                            <NavDropdown.Item href="/music/queue/add">Add to queue</NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link href="/login">Login</Nav.Link>
                     </Nav>
