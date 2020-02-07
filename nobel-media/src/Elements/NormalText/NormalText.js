@@ -14,9 +14,7 @@ class NormalText extends Component {
         return (
             <Row>
                 <Col>
-                    <div>
-                        <p className="centerWidth text-center textSimple textColor4 maxTextWidht">{this.props.txt}</p>
-                    </div>
+                    <p className="centerWidth text-center textSimple textColor4 maxTextWidht">{this.props.txt}</p>
                 </Col>
             </Row>
         )

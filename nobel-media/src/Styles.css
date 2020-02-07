@@ -43,6 +43,8 @@ a:hover{
 }
 .maxTextWidht { max-width: 700px; }
 
+.margin0{ margin: 0; }
+.margin5{ margin: 5px; }
 .margin10{ margin: 10px; }
 .margin10_right{ margin-right: 10px; }
 
@@ -80,3 +82,4 @@ a:hover{
 .height30{ height: 30px; }
 .height40{ height: 40px; }
 .height50{ height: 50px; }
+.height75{ height: 75px; }

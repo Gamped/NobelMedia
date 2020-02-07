@@ -1,7 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import {Row, Col, Button} from "react-bootstrap";
 import NormalText from "../../Elements/NormalText/NormalText";
-import { Component } from "react";
+import CurrentSongBox from "../../Elements/CurrentSongBox/CurrentSongBox"
+
 import "./AddToQueue.css";
 
 class AddToQueue extends Component {
@@ -10,6 +11,20 @@ class AddToQueue extends Component {
        this.state = { 
           songs: [
             { title: "Sandstorm", artist: 'Darude', playTime: 120 },
+            { title: "Last christmas", artist: 'Wham', playTime: 87 },{ title: "Sandstorm", artist: 'Darude', playTime: 120 },
+            { title: "Last christmas", artist: 'Wham', playTime: 87 },{ title: "Sandstorm", artist: 'Darude', playTime: 120 },
+            { title: "Last christmas", artist: 'Wham', playTime: 87 },{ title: "Sandstorm", artist: 'Darude', playTime: 120 },
+            { title: "Last christmas", artist: 'Wham', playTime: 87 },{ title: "Sandstorm", artist: 'Darude', playTime: 120 },
+            { title: "Last christmas", artist: 'Wham', playTime: 87 },{ title: "Sandstorm", artist: 'Darude', playTime: 120 },
+            { title: "Last christmas", artist: 'Wham', playTime: 87 },{ title: "Sandstorm", artist: 'Darude', playTime: 120 },
+            { title: "Last christmas", artist: 'Wham', playTime: 87 },{ title: "Sandstorm", artist: 'Darude', playTime: 120 },
+            { title: "Last christmas", artist: 'Wham', playTime: 87 },{ title: "Sandstorm", artist: 'Darude', playTime: 120 },
+            { title: "Last christmas", artist: 'Wham', playTime: 87 },{ title: "Sandstorm", artist: 'Darude', playTime: 120 },
+            { title: "Last christmas", artist: 'Wham', playTime: 87 },{ title: "Sandstorm", artist: 'Darude', playTime: 120 },
+            { title: "Last christmas", artist: 'Wham', playTime: 87 },{ title: "Sandstorm", artist: 'Darude', playTime: 120 },
+            { title: "Last christmas", artist: 'Wham', playTime: 87 },{ title: "Sandstorm", artist: 'Darude', playTime: 120 },
+            { title: "Last christmas", artist: 'Wham', playTime: 87 },{ title: "Sandstorm", artist: 'Darude', playTime: 120 },
+            { title: "Last christmas", artist: 'Wham', playTime: 87 },{ title: "Sandstorm", artist: 'Darude', playTime: 120 },
             { title: "Last christmas", artist: 'Wham', playTime: 87 },
           ]
        }
@@ -34,44 +49,48 @@ class AddToQueue extends Component {
   
      render(){
         return (
-            <div className="contentBox">
-                <Row>
-                    <Col><h1 className="text-center">Add to queue</h1></Col>
-                </Row>
-                <NormalText txt="Here you can add a song to the queue"/>
-                <Row>
-                    <Col>
-                        <input
-                            className="AddToQueueSearchField form-control centerWidth"
-                            placeholder="Search for song on Spotify"
-                            id="SearchField"
-                            type="text"
-                        />
-                    </Col>
-                </Row>
-                <Row>
-                    <Button className="centerWidth AddToQueueButton" variant="outline-light">Search</Button>
-                </Row>
-                <Row>
-                    <Col>
-                        <h3 className="text-center">Search results:</h3>
-                        <div className="table-responsive-xl">
-                            <table className="table table-striped table-dark">
-                                <thead>
-                                    <tr>
-                                        <th>Song title</th>
-                                        <th>Artist</th>
-                                        <th>Playtime</th>
-                                        <th>Add?</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {this.renderTableData()}
-                                </tbody>
-                            </table>
-                        </div>
-                    </Col>
-                </Row>
+            <div>
+                <div className="contentBox">
+                    <Row>
+                        <Col><h1 className="text-center">Add to queue</h1></Col>
+                    </Row>
+                    <NormalText txt="Here you can add a song to the queue"/>
+                    <Row>
+                        <Col>
+                            <input
+                                className="AddToQueueSearchField form-control centerWidth"
+                                placeholder="Search for song on Spotify"
+                                id="SearchField"
+                                type="text"
+                            />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Button className="centerWidth AddToQueueButton" variant="outline-light">Search</Button>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <h3 className="text-center">Search results:</h3>
+                            <div className="table-responsive-xl">
+                                <table className="table table-striped table-dark">
+                                    <thead>
+                                        <tr>
+                                            <th>Song title</th>
+                                            <th>Artist</th>
+                                            <th>Playtime</th>
+                                            <th>Add?</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {this.renderTableData()}
+                                    </tbody>
+                                </table>
+                                <div className="height75"/>
+                            </div>
+                        </Col>
+                    </Row>
+                </div>
+                <CurrentSongBox/>
             </div>
         )
     }

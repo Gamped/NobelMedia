@@ -2,6 +2,7 @@ import React from "react";
 import {Row, Col, Button} from "react-bootstrap";
 import NormalText from "../../Elements/NormalText/NormalText";
 import { Component } from "react";
+import CurrentSongBox from "../../Elements/CurrentSongBox/CurrentSongBox"
 
 class CurrentQueue extends Component {
     constructor(props) {
@@ -33,30 +34,34 @@ class CurrentQueue extends Component {
   
      render(){
         return (
-            <div className="contentBox">
-                <Row>
-                    <Col><h1 className="text-center">Current queue</h1></Col>
-                </Row>
-                <NormalText txt="The current queue, and vote to skip a song"/>
-                <Row>
-                    <Col>
-                        <div className="table-responsive-xl">
-                            <table className="table table-striped table-dark">
-                                <thead>
-                                    <tr>
-                                        <th>Song title</th>
-                                        <th>Artist</th>
-                                        <th>Playtime</th>
-                                        <th>Skip?</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {this.renderTableData()}
-                                </tbody>
-                            </table>
-                        </div>
-                    </Col>
-                </Row>
+            <div>
+                <div className="contentBox">
+                    <Row>
+                        <Col><h1 className="text-center">Current queue</h1></Col>
+                    </Row>
+                    <NormalText txt="The current queue, and vote to skip a song"/>
+                    <Row>
+                        <Col>
+                            <div className="table-responsive-xl">
+                                <table className="table table-striped table-dark">
+                                    <thead>
+                                        <tr>
+                                            <th>Song title</th>
+                                            <th>Artist</th>
+                                            <th>Playtime</th>
+                                            <th>Skip?</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {this.renderTableData()}
+                                    </tbody>
+                                </table>
+                                <div className="height75"/>
+                            </div>
+                        </Col>
+                    </Row>
+                </div>
+                <CurrentSongBox/>
             </div>
         )
     }

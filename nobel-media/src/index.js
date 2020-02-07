@@ -9,6 +9,7 @@ import CurrentQueue from "./Pages/CurrentQueue/CurrentQueue";
 import AddToQueue from "./Pages/AddToQueue/AddToQueue";
 import NavBar from './Elements/NavBar/NavBar';
 
+
 // This uses <BrowserRouter> to determine which component to render
 ReactDOM.render(
     <div>
