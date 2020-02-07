@@ -41,7 +41,7 @@ class CurrentQueue extends Component {
                 <Row>
                     <Col>
                         <div className="table-responsive-xl">
-                            <table class="table table-striped table-dark">
+                            <table className="table table-striped table-dark">
                                 <thead>
                                     <tr>
                                         <th>Song title</th>

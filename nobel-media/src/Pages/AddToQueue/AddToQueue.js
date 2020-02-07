@@ -56,7 +56,7 @@ class AddToQueue extends Component {
                     <Col>
                         <h3 className="text-center">Search results:</h3>
                         <div className="table-responsive-xl">
-                            <table class="table table-striped table-dark">
+                            <table className="table table-striped table-dark">
                                 <thead>
                                     <tr>
                                         <th>Song title</th>
