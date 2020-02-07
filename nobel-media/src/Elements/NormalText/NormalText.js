@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import {Row, Col} from "react-bootstrap";
 
+// To simplify writing normal text this class can be used
 class NormalText extends Component {
     constructor(props){
         super(props);
@@ -13,9 +14,7 @@ class NormalText extends Component {
         return (
             <Row>
                 <Col>
-                    <div>
-                        <p className="centerWidth text-center textSimple textColor4 maxTextWidht">{this.props.txt}</p>
-                    </div>
+                    <p className="centerWidth text-center textSimple textColor4 maxTextWidht">{this.props.txt}</p>
                 </Col>
             </Row>
         )
