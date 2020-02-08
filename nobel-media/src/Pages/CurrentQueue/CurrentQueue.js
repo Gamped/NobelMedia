@@ -2,7 +2,8 @@ import React from "react";
 import {Row, Col, Button} from "react-bootstrap";
 import NormalText from "../../Elements/NormalText/NormalText";
 import { Component } from "react";
-import CurrentSongBox from "../../Elements/CurrentSongBox/CurrentSongBox"
+import CurrentSongBox from "../../Elements/CurrentSongBox/CurrentSongBox";
+import BackgroundVideo from "../../Elements/BackgroundVideo/BackgroundVideo";
 
 class CurrentQueue extends Component {
     constructor(props) {
@@ -35,6 +36,7 @@ class CurrentQueue extends Component {
      render(){
         return (
             <div>
+                <BackgroundVideo/>
                 <div className="contentBox">
                     <Row>
                         <Col><h1 className="text-center">Current queue</h1></Col>

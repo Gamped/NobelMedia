@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import {Row, Col, Button} from "react-bootstrap";
 import NormalText from "../../Elements/NormalText/NormalText";
 import CurrentSongBox from "../../Elements/CurrentSongBox/CurrentSongBox"
-
+import BackgroundVideo from "../../Elements/BackgroundVideo/BackgroundVideo";
 import "./AddToQueue.css";
 
 class AddToQueue extends Component {
@@ -50,6 +50,7 @@ class AddToQueue extends Component {
      render(){
         return (
             <div>
+                <BackgroundVideo/>
                 <div className="contentBox">
                     <Row>
                         <Col><h1 className="text-center">Add to queue</h1></Col>

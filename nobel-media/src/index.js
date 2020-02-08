@@ -20,7 +20,7 @@ ReactDOM.render(
                 <Route exact path="/remote" component={Remote}/>
                 <Route exact path="/login" component={Login}/>
                 <Route exact path="/music/queue" component={CurrentQueue}/>
-                <Route exact path="/music/queue-song" component={AddToQueue}/>
+                <Route exact path="/music/queue/add" component={AddToQueue}/>
             </div>
         </BrowserRouter>
     </div>

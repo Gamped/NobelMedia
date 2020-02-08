@@ -1,6 +1,6 @@
 .LoginForm{
     position: relative;
-    min-width: 200px;
+    min-width: 225px;
     width: 40%;
     max-width: 350px;
     margin-bottom: 10px;
@@ -14,4 +14,11 @@
     height: 45px;
     margin-bottom: 10px;
     margin-top: 5px;
+}
+
+.LoginFeedbackText{
+    background-color: #531414c0;
+    min-width: 225px;
+    width: 40%;
+    max-width: 350px;
 }

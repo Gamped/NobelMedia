@@ -2,11 +2,13 @@ import React from "react";
 import {Row, Col} from "react-bootstrap";
 import NormalText from "../../Elements/NormalText/NormalText";
 import NobelLogo from "../../Media/NewLogo.svg";
+import BackgroundVideo from "../../Elements/BackgroundVideo/BackgroundVideo";
 import "./Home.css";
 
 const Home = () => {
     return (
         <div>
+            <BackgroundVideo/>
             <div className="contentBox">
                 <Row>
                     <Col><h1 className="text-center">Nobel Media</h1></Col>

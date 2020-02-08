@@ -1,11 +1,13 @@
 import React from "react";
 import {Row, Col, Button} from "react-bootstrap";
 import NormalText from "../../Elements/NormalText/NormalText";
+import BackgroundVideo from "../../Elements/BackgroundVideo/BackgroundVideo";
 import "./Remote.css";
 
 const About = () => {
     return (
         <div>
+            <BackgroundVideo/>
             <div className="contentBox">
                 <Row>
                     <Col><h1 className="text-center">Remote</h1></Col>
