@@ -1,6 +1,5 @@
 import React from "react";
-import {Row, Col, ProgressBar} from "react-bootstrap";
-import NormalText from "../../Elements/NormalText/NormalText";
+import {ProgressBar} from "react-bootstrap";
 import "./CurrentSongBox.css";
 
 // The HTML of the login page
